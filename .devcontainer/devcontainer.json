@@ -1,0 +1,18 @@
+{
+  "name": "PPPC-Net - GeoFormer",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "runtime",
+  "workspaceFolder": "/home/usr/app",
+  "postCreateCommand": ".devcontainer/scripts/install-dependencies.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+      },
+      "extensions": [
+        "ms-azuretools.vscode-containers",
+        "ms-python.python"
+      ]
+    }
+  },
+  "remoteUser": "usr"
+}

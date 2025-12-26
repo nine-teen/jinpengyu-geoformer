@@ -1,0 +1,16 @@
+name: ${APP_NAME:-pppc-exp-jinpengyu-geoformer}
+
+services:
+  runtime:
+    build:
+      context: .
+      dockerfile: docker/runtime/dev.Dockerfile
+      args:
+        - UID=${HOST_UID}
+        - GID=${HOST_GID}
+        - USER=${CONTAINER_USER}
+    shm_size: 1g
+    gpus: all
+    volumes:
+      - .:/home/${CONTAINER_USER}/app
+      - /home/${CONTAINER_USER}/app/.venv
