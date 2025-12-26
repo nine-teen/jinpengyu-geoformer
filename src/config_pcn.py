@@ -15,7 +15,7 @@ __C.DATASETS.SHAPENET.PARTIAL_POINTS_PATH        = './data/ShapeNetCompletion/%s
 __C.DATASETS.SHAPENET.COMPLETE_POINTS_PATH       = './data/ShapeNetCompletion/%s/complete/%s/%s.pcd'
 
 # Used to test KITTI dataset
-# __C.DATASETS.SHAPENET.ONLY_CAR         = False
+__C.DATASETS.SHAPENET.ONLY_CAR         = False
 # __C.DATASETS.SHAPENET.ONLY_CAR         = True
 
 #
